@@ -25,7 +25,9 @@ export default ({item}) => {
                     <div className="featured--year">{firstDate.getFullYear()}</div>
                     <div className="featured--seasons">{item.number_of_seasons} temporada{item.number_of_seasons !== 1 ? 's' : ''}</div>
                     <div className="featured--description">{item.overwiew}</div>
-                    <div className="featured--buttond">
+                    <div className="featured--buttons">
+                        <a href={`/watch/${item.id}`}>Assistir</a>
+                        <a href={`/list/add/${item.id}`}>+ Minha Lista</a>
 
                     </div>
                     <div className="featured--genres"><strong>Gêneros</strong>{genres.join(', ')}</div>
