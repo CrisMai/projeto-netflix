@@ -62,6 +62,12 @@ export default () => {
         <MovieRow key={key} title={item.title} items={item.items} />
       ))}
     </section>
+
+    <footer>
+      Feito com amor!
+      Direitos de imagem para Netflix<br/>
+      Dados adquiridos do site Themoviedb.org
+    </footer>
     
   </div>
   );
